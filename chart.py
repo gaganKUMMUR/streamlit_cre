@@ -4,6 +4,8 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 st.title("Chemical reaction Engineering")
+st.title("Method to find the order of Reaction of the given concentration by Linear Fitting")
+
 t = [0,1,2,3,4]
 n = st.number_input('Insert number of reading',5,10)
 for i in range(5,int((n+1))):
@@ -24,7 +26,7 @@ def rate_calculator(n,b,a):
   print (b)
   for i in range (n+1):
       b[i]=math.log(-b[i])
-  plot_data(t,b, "rate of reaction vs time", 'rate of reaction in mol/(m^3*sec)')
+  plot_data(t,b, "rate of reaction vs time", 'rate of reaction in mol/(m^3*minute)')
   plot_data(t,f, "concetration vs time", 'concetration in mol/m^3')
   return
 
@@ -40,7 +42,7 @@ def fit_line_equation(x, y):
     print (equation)
     return coefficients
 
-def plot_data(x, y,name,yaxis, xaxis='time in sec'):
+def plot_data(x, y,name,yaxis, xaxis='time in minute'):
     # Plot the data points
     fig, ax = plt.subplots() 
     ax.scatter(x, y, color='blue')
