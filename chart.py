@@ -4,10 +4,10 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 st.title("Chemical reaction Engineering")
-t = [1,2,3,4,5]
+t = [0,1,2,3,4]
 n = st.number_input('Insert number of reading',5,10)
 for i in range(5,int((n+1))):
-    t.append(i+1)
+    t.append(i)
 # f = [15,12,11,7,6]
 a=[]
 b=[]
