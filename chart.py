@@ -4,7 +4,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 st.title("Chemical reaction Engineering")
-st.title("Method to find the order of Reaction of the given concentration by Linear Fitting")
+st.header("Method to find the order of Reaction of the given concentration by Linear Fitting")
 
 t = [0,1,2,3,4]
 n = st.number_input('Insert number of reading',5,10)
