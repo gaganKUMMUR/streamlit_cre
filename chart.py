@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-from scipy.interpolate import interp1d
 
 st.title("Chemical reaction Engineering")
 st.header("Method to find the order of Reaction of the given concentration by Linear Fitting")
