@@ -77,7 +77,7 @@ def plot_line(slope, intercept):
 
 # print ("initial concentration")
 # ca0=float(input())
-ca0 = st.number_input('initial concentration',15)
+ca0 = st.number_input('initial concentration',15.00)
 a.append(ca0)
 d = [st.number_input(f'enter concentration after {str(i+1)} miniutes', value=ca0-i-2, max_value=ca0,key=f"text_input_{i}") for i in range(n)]
 # c = [ st.number_input(f'enter concentration after {str(i+1)} miniutes') i for i in range(n)] 
